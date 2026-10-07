@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Responsive Test</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 20px;
+      padding-bottom: 5vh;
+    }
+
+    img {
+      width: 30vw;
+    }
+
+    header{
+      text-align: center;
+    }
+    footer {
+      height: 10vh;
+      background-color: black;
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: white;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    #flexbox {
+      display: flex;
+      height: 70vh;
+    }
+
+    #random-section {
+      flex: 1;
+      background-color: lightgrey;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #links-section {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      background-color: lightcyan;
+      padding-left: 20px;
+    }
+
+    a {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .box {
+      padding: 30px;
+      background-color: lightblue;
+      flex: 1;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Responsive Web Design</h1>
+
+  </header>
+  <main>
+
+    <section id="template-section">
+      <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+      </div>
+    </section>
+
+    <h2>Added a Flexbox Just to make the Website a bit shorter.</h2>
+
+    <section id="flexbox">
+      <section id="random-section">
+        <p>This website is a test to see what could be done inside HTML and CSS.</p>
+        <p>Below is an image of Ichigo, one of the big 3.</p>
+        <img src="wallpapersden.com_ichigo-kurosaki-cool-bleach-tv_1927x1080 (1).jpg" alt="Kurosaki Ichigo">
+      </section>
+
+      <section id="links-section">
+        <nav>
+          <a href="https://www.youtube.com/@jdbvortex">My YT Channel</a>
+          <a href="https://www.youtube.com/@scorpio7850">My Other YT Channel (completely lost the login for this)</a>
+        </nav>
+      </section>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>This is Jajuan's website.</p>
+  </footer>
+</body>
+
+<!--1200px, 900px, 700px, 600px, 500px and 375px.-->
+
+</html>
